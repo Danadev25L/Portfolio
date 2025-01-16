@@ -82,16 +82,20 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Discord",
+      name: "Instagram",
       src: "/instagram.svg",
+      url : "https://www.instagram.com/aelius_77/"
     },
     {
       name: "Facebook",
       src: "/facebook.svg",
+        url : "https://www.facebook.com/profile.php?id=100080809302441"
+      
     },
     {
-      name: "Instagram",
-      src: "/discord.svg",
+      name: "Github",
+      src: "/gitwhite.png",
+         url : "https://github.com/Danadev25L"
     },
   ];
   
@@ -179,12 +183,7 @@ export const Skill_data = [
       width: 40,
       height: 40,
     },
-    {
-      skill_name: "Fire base",
-      Image: "/Firebase.png",
-      width: 55,
-      height: 55,
-    },
+
     {
       skill_name: "Postger SQL",
       Image: "/postger.png",
@@ -203,21 +202,11 @@ export const Skill_data = [
       width: 70,
       height: 70,
     },
-    {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
-      width: 80,
-      height: 80,
-    },
+
   ];
   
   export const Full_stack = [
-    {
-      skill_name: "React Native",
-      Image: "/ReactNative .png",
-      width: 70,
-      height: 70,
-    },
+
     {
       skill_name: "Tauri",
       Image: "/tauri.svg",
@@ -231,26 +220,11 @@ export const Skill_data = [
       height: 70,
     },
   
-    {
-      skill_name: "Figma",
-      Image: "/figma.png",
-      width: 50,
-      height: 50,
-    },
+
   
   ];
   
-  
-  
-  export const Other_skill = [
-    {
-      skill_name: "Go",
-      Image: "/go.png",
-      width: 60,
-      height: 60,
-    },
-  ];
-  
+
   
   
   

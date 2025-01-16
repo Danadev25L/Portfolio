@@ -12,19 +12,21 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/5460829670669936706 (1).jpg"
+          title="E-commerce"
+
+          description="Developing a responsive e-commerce website using Next.js and TypeScript, integrated with a CMS for dynamic data management......"
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Screenshot 2025-01-16 200235.png"
+          title="Online Course Platform"
+        
+          description="A  full-stack web application designed to streamline online learning and teaching. The platform empowers teachers to upload courses, and...."
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Screenshot 2025-01-16 200559.png"
+          title="Dashboard"
+          description="A modern web platform built with Next.js, featuring secure authentication, user management, role-based access control, and responsive design. ......"
         />
       </div>
     </div>
