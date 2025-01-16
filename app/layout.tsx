@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Ensure the favicon path is correct */}
-        <link rel="icon" type="image/png" href="/NavLogo.png" />
+        <link rel="icon" type="image/png" href="/WebchainLogo.svg" />
         <title>Dana Dev</title>
       </head>
       <body
