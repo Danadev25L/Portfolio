@@ -4,7 +4,9 @@ import SkillText from "../sub/SkillText";
 import { AllSkills } from "@/constants";
 
 const Skills: React.FC = () => {
-  const categories = [...new Set(AllSkills.map((skill) => skill.category))]; // Unique categories
+  const categories = Array.from(
+    new Set(AllSkills.map((skill) => skill.category))
+  ); // Unique categories
 
   return (
     <section
@@ -32,7 +34,6 @@ const Skills: React.FC = () => {
           </div>
         </div>
       ))}
-
       
 <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
