@@ -232,7 +232,7 @@ export const Skill_data = [
      
       {
         skill_name: "Docker",
-        Image: "/docker.png",
+        Image: "/doker.png",
         width: 70,
         height: 70,
         category: "Full Stack",
