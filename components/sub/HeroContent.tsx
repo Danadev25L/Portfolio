@@ -11,22 +11,24 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
+const MotionLink = motion(Link);
+
 const HeroContent = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col lg:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
+      className="flex flex-col lg:flex-row items-center justify-center w-full z-[20] gap-8"
     >
       {/* Left Section */}
-      <div className="flex flex-col gap-5 justify-center m-auto text-center lg:text-start w-full lg:w-1/2">
+      <div className="flex flex-col gap-5 justify-center text-center lg:text-start w-full lg:w-1/2 px-4 md:px-8">
         {/* Welcome Box */}
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] sm:mt-0 mt-[140px] px-[70px] border border-[#7042f88b] opacity-[0.9] hidden lg:flex items-center justify-center lg:justify-start"
+          className="Welcome-box py-3 px-6 sm:px-8 border border-[#7042f88b] opacity-[0.9] flex items-center justify-center lg:justify-start rounded-lg mx-auto lg:mx-0 max-w-full sm:max-w-md lg:max-w-full"
         >
-          <SparklesIcon className="text-[#b49bff] h-5 w-5" />
-          <h1 className="Welcome-text text-[17px] sm:text-[30px]">
+          <SparklesIcon className="text-[#b49bff] h-6 w-6 mr-3" />
+          <h1 className="Welcome-text text-xl sm:text-2xl font-medium">
             Fullstack Developer Portfolio
           </h1>
         </motion.div>
@@ -34,13 +36,12 @@ const HeroContent = () => {
         {/* Hero Heading */}
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 mt-6 text-3xl sm:text-4xl md:text-6xl font-bold text-white max-w-full lg:max-w-[600px]"
+          className="flex flex-col gap-4 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"
         >
           <span>
             Providing
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              the best{" "}
+              {" "}the best{" "}
             </span>
             project experience
           </span>
@@ -49,34 +50,34 @@ const HeroContent = () => {
         {/* Hero Description */}
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-sm sm:text-base md:text-lg text-gray-400 my-4 lg:my-5 max-w-full lg:max-w-[600px]"
+          className="text-lg text-gray-300 my-6 max-w-full lg:max-w-[600px] mx-auto lg:mx-0"
         >
-          Hi Iam Dana  A Full Stack Software Engineer with experience in Website,
+          Hi I&apos;m Dana. A Full Stack Software Engineer with experience in Website,
           and Software development. Check out my projects and skills.
         </motion.p>
 
         {/* CTA Button */}
-        <Link href="#projects">
-        <motion.a
+        <MotionLink
+          href="#projects"
           variants={slideInFromLeft(1)}
-          className="py-2 px-4 text-sm sm:text-base md:py-3 md:px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[150px] sm:max-w-[200px] mx-auto lg:mx-0"
+          className="py-3 px-8 text-lg button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] mx-auto lg:mx-0 block font-medium hover:opacity-90 transition-opacity"
         >
           Learn More!
-        </motion.a>
-        </Link>
+        </MotionLink>
       </div>
 
-      {/* Right Section */}
+      {/* Right Section - Larger Image */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full lg:w-1/2 h-auto flex justify-center items-center mt-10 lg:mt-0"
+        className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0"
       >
         <Image
           src="/mainIconsdark.svg"
           alt="work icons"
-          height={450}
-          width={450}
-          className="w-3/4 sm:w-auto max-w-full lg:max-w-[650px]"
+          height={550}
+          width={550}
+          className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
+          priority
         />
       </motion.div>
     </motion.div>

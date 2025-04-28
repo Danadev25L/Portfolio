@@ -1,83 +1,72 @@
 import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { FaInstagram, FaEnvelope } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
-
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                
-                    <a href="https://www.instagram.com/danabestun/">
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    </a>
-                    <a>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                    </a>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-    
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <a>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaInstagram />
-                        
-                        <span className="text-[15px] ml-[6px]">Instagram</span>     
-                    </p>
-                    </a>
-                    <a>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    </a>
-                    <a>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                    </a>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">Danamadridi7717@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; Dana Bestun. All rights reserved
-            </div>
+    <footer className="w-full bg-[#03001417] backdrop-blur-md border-t border-[#7042f861] text-gray-200 py-8 px-4 mt-16">
+      <div className="max-w-5xl mx-auto">
+        {/* Logo and Tagline */}
+        <div className="flex flex-col items-center mb-6">
+          <div className="flex items-center gap-3">
+            <Image 
+              src="/NavLogo.png" 
+              alt="Dana Dev Logo" 
+              width={40} 
+              height={40}
+            />
+            <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7042f8] to-[#8d6afb]">
+              Dana Bestun
+            </h2>
+          </div>
         </div>
-    </div>
-  )
-}
+        
+        {/* Social Links */}
+        <div className="flex justify-center gap-6 my-6">
+          <Link href="https://github.com/danabestun" className="transform transition-transform hover:scale-110">
+            <div className="p-3 rounded-full bg-[#0300145e] hover:bg-[#7042f861] transition-colors duration-300">
+              <RxGithubLogo className="text-xl" />
+            </div>
+          </Link>
+          
+          <Link href="#" className="transform transition-transform hover:scale-110">
+            <div className="p-3 rounded-full bg-[#0300145e] hover:bg-[#7042f861] transition-colors duration-300">
+              <RxLinkedinLogo className="text-xl" />
+            </div>
+          </Link>
+          
+          <Link href="https://www.instagram.com/danabestun/" className="transform transition-transform hover:scale-110">
+            <div className="p-3 rounded-full bg-[#0300145e] hover:bg-[#7042f861] transition-colors duration-300">
+              <FaInstagram className="text-xl" />
+            </div>
+          </Link>
+          
+          <Link href="mailto:Danamadridi7717@gmail.com" className="transform transition-transform hover:scale-110">
+            <div className="p-3 rounded-full bg-[#0300145e] hover:bg-[#7042f861] transition-colors duration-300">
+              <FaEnvelope className="text-xl" />
+            </div>
+          </Link>
+        </div>
+        
+        {/* Nav Links */}
+        <div className="flex justify-center gap-6 text-sm mb-6">
+          <Link href="#about-me" className="text-gray-300 hover:text-white transition-colors">About</Link>
+          <Link href="#skills" className="text-gray-300 hover:text-white transition-colors">Skills</Link>
+          <Link href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+        </div>
+        
+        {/* Copyright */}
+        <div className="text-center text-sm text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Dana Bestun. All rights reserved</p>
+          <p className="text-xs mt-2">
+            <span className="text-[#7042f8]">♥</span> Modern web developer
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

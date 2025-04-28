@@ -192,9 +192,9 @@ export const Skill_data = [
         category: "Backend",
       },   {
         skill_name: "Php",
-        Image: "/Php.png", // Replace with the correct image path
-        width: 180,
-        height: 200,
+        Image: "/Bun.png", // Replace with the correct image path
+        width: 85,
+        height: 80,
         category: "Backend",
       },
       {
