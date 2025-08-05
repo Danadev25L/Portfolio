@@ -14,7 +14,7 @@ const Navbar = () => {
     // Only handle scroll-based navigation on the home page
     if (pathname === '/') {
       const handleScroll = () => {
-        const sections = ["about-me", "skills", "projects"];
+        const sections = ["about-me", "skills", "projects", "resume"];
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
@@ -84,6 +84,12 @@ const Navbar = () => {
                 className={`cursor-pointer ${activeSection === "projects" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 Projects
+              </button>
+              <button 
+                onClick={() => handleNavigation("resume")}
+                className={`cursor-pointer ${activeSection === "resume" ? "text-[#7042f8] font-medium" : ""}`}
+              >
+                Resume
               </button>
             </div>
           </div>
