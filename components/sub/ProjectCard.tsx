@@ -159,7 +159,7 @@ const ProjectCard = ({ src, title, description, link, githubLink }: Props) => {
               className="w-full h-full rounded-2xl"
               autoPlay
             >
-              <source src="/scholl-managment-system.mp4" type="video/mp4" />
+              <source src={title === "DanaRent" ? "/WhatsApp Video 2025-08-05 at 3.13.01 PM.mp4" : "/scholl-managment-system.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
