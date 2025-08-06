@@ -87,14 +87,7 @@ const Projects = () => {
       githubLink: "https://github.com/Danadev25L/Learning-mangment",
       link: "#"
     },
-    {
-      id: 6,
-      src: "/WebchainLogo.png",
-      title: "Webchain",
-      description: "A blockchain-based platform for secure and transparent digital transactions, supporting smart contracts and decentralized applications.",
-      githubLink: "#",
-      link: "#"
-    },
+
     {
       id: 7,
       src: "/foodorder.png",
