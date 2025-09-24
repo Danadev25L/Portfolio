@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Nishtman Strategy Institute",
       description: "Nishtman Strategy Institute is dedicated to empowering Kurdish youth through scientific research, educational publications, and socio-cultural activities. The institute connects young people with their potential, their community, and the broader region, fostering active roles in society and supporting innovative projects across Kurdistan.",
       githubLink: "#",
-      link: "https://nishtmanstrategyinstitute.com/"
+      link: "https://nishtmansi.com"
     },
     // 2. ZagaMall
     {
