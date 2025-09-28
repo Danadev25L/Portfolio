@@ -36,16 +36,7 @@ const Projects = () => {
       githubLink: "#",
       link: "https://zagamallerbil.com/"
     },
-    // 3. School Management System (dashboard)
-    {
-      id: 12,
-      src: "/Screenshot 2025-08-05 154344.png",
-      title: "School Management System",
-      description: "A comprehensive school management system for administrators, teachers, students, and parents. Features include attendance tracking, grade management, scheduling, communication tools, reporting, and a full-featured dashboard for school operations.",
-      githubLink: "#",
-      link: "#"
-    },
-    // 4. ZagaMall Dashboard
+    // 3. ZagaMall Dashboard
     {
       id: 9,
       src: "/Screenshot 2025-08-05 144748.png",
@@ -54,7 +45,7 @@ const Projects = () => {
       githubLink: "#",
       link: "https://zagamallerbil.com/"
     },
-    // 5. DanaRent (Real Estate) - with video
+    // 4. DanaRent (Real Estate) - with video
     {
       id: 3,
       src: "/landing.png",
@@ -66,7 +57,7 @@ const Projects = () => {
     {
       id: 1,
       src: "/furatpay.png",
-      title: "Furapay",
+      title: "Furatpay",
       description: "Iraq's first all-in-one payment platform with instant invoicing, WooCommerce integration, and unified API.",
       githubLink: "#",
       link: "https://furatpay.com/"
@@ -87,7 +78,6 @@ const Projects = () => {
       githubLink: "https://github.com/Danadev25L/Learning-mangment",
       link: "#"
     },
-
     {
       id: 7,
       src: "/foodorder.png",
