@@ -82,21 +82,20 @@ export const Skill_data = [
   
   export const Socials = [
     {
+      name: "Github",
+      src: "/gitwhite.png",
+      url: "https://github.com/danabestun"
+    },
+    {
       name: "Instagram",
       src: "/instagram.svg",
-      url : "https://www.instagram.com/aelius_77/"
+      url: "https://www.instagram.com/danabestun/"
     },
     {
       name: "Facebook",
       src: "/facebook.svg",
-        url : "https://www.facebook.com/profile.php?id=100080809302441"
-      
-    },
-    {
-      name: "Github",
-      src: "/gitwhite.png",
-         url : "https://github.com/Danadev25L"
-    },
+      url: "https://www.facebook.com/profile.php?id=100080809302441"
+    }
   ];
   
   

@@ -128,7 +128,7 @@ const Projects = () => {
         className="w-full max-w-7xl px-4 sm:px-6 lg:px-8"
       >
         <h1 className="text-[40px] md:text-[50px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-center mb-8">
-          Recent Projects
+          Selected work
         </h1>
         
         <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16">
@@ -164,7 +164,7 @@ const Projects = () => {
               href="/projects"
               className="px-6 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-full font-semibold shadow-lg hover:from-purple-600 hover:to-cyan-600 transition-colors"
             >
-              See more
+              View all projects
             </a>
           </div>
         )}

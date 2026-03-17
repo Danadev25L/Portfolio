@@ -61,36 +61,42 @@ const Navbar = () => {
               height={50}
               className="cursor-pointer hover:animate-slowspin"
             />
-            <span className="font-bold ml-2 hidden sm:block text-gray-300"> Dana Dev</span>
+            <span className="font-bold ml-2 hidden sm:block text-gray-300">Dana Bestun</span>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden lg:flex w-[500px] h-full items-center justify-between">
             <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[10px] md:px-[20px] py-[5px] md:py-[10px] rounded-full text-gray-200 text-sm md:text-base">
-              <button 
+              <button
                 onClick={() => handleNavigation("about-me")}
                 className={`cursor-pointer ${activeSection === "about-me" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 About me
               </button>
-              <button 
+              <button
                 onClick={() => handleNavigation("skills")}
                 className={`cursor-pointer ${activeSection === "skills" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 Skills
               </button>
-              <button 
+              <button
                 onClick={() => handleNavigation("projects")}
                 className={`cursor-pointer ${activeSection === "projects" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 Projects
               </button>
-              <button 
+              <button
                 onClick={() => handleNavigation("resume")}
                 className={`cursor-pointer ${activeSection === "resume" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 Resume
               </button>
+              <Link
+                href="/contact"
+                className="cursor-pointer hover:text-[#7042f8] font-medium transition-colors"
+              >
+                Contact
+              </Link>
             </div>
           </div>
 
@@ -114,11 +120,11 @@ const Navbar = () => {
 
       {/* Mobile Bottom App Menu - Enhanced Styling */}
       <div className="lg:hidden w-full fixed bottom-0 left-0 z-50 bg-[#03001499] backdrop-blur-md shadow-lg shadow-[#2A0E61]/50 flex justify-around py-2 border-t border-[#7042f861] rounded-t-xl">
-        <button 
+        <button
           onClick={() => handleNavigation("about-me")}
           className={`flex flex-col items-center relative px-4 py-2 transition-all duration-300 ${
-            activeSection === "about-me" 
-              ? "text-white" 
+            activeSection === "about-me"
+              ? "text-white"
               : "text-gray-300 hover:text-gray-100"
           }`}
         >
@@ -130,11 +136,11 @@ const Navbar = () => {
           </svg>
           <span className="text-xs mt-1 font-medium">About</span>
         </button>
-        <button 
+        <button
           onClick={() => handleNavigation("skills")}
           className={`flex flex-col items-center relative px-4 py-2 transition-all duration-300 ${
-            activeSection === "skills" 
-              ? "text-white" 
+            activeSection === "skills"
+              ? "text-white"
               : "text-gray-300 hover:text-gray-100"
           }`}
         >
@@ -146,11 +152,11 @@ const Navbar = () => {
           </svg>
           <span className="text-xs mt-1 font-medium">Skills</span>
         </button>
-        <button 
+        <button
           onClick={() => handleNavigation("projects")}
           className={`flex flex-col items-center relative px-4 py-2 transition-all duration-300 ${
-            activeSection === "projects" 
-              ? "text-white" 
+            activeSection === "projects"
+              ? "text-white"
               : "text-gray-300 hover:text-gray-100"
           }`}
         >
@@ -162,6 +168,31 @@ const Navbar = () => {
           </svg>
           <span className="text-xs mt-1 font-medium">Projects</span>
         </button>
+        <button
+          onClick={() => handleNavigation("resume")}
+          className={`flex flex-col items-center relative px-4 py-2 transition-all duration-300 ${
+            activeSection === "resume"
+              ? "text-white"
+              : "text-gray-300 hover:text-gray-100"
+          }`}
+        >
+          {activeSection === "resume" && (
+            <span className="absolute inset-0 bg-gradient-to-r from-[#7042f8] to-[#8d6afb] rounded-xl -z-10 opacity-90"></span>
+          )}
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span className="text-xs mt-1 font-medium">Resume</span>
+        </button>
+        <Link
+          href="/contact"
+          className="flex flex-col items-center relative px-4 py-2 transition-all duration-300 text-gray-300 hover:text-gray-100"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span className="text-xs mt-1 font-medium">Contact</span>
+        </Link>
       </div>
     </>
   );

@@ -4,12 +4,13 @@ import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
+import SmoothScroll from "@/components/main/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dana Dev",
-  description: "This is my portfolio",
+  title: "Dana Bestun — Full-stack Software Engineer",
+  description: "Portfolio and selected projects. Full-stack development with React, Next.js, TypeScript, and Node.",
 };
 export default function RootLayout({
   children,
@@ -21,15 +22,17 @@ export default function RootLayout({
       <head>
         {/* Ensure the favicon path is correct */}
         <link rel="icon" type="image/png" href="/WebchainLogo.svg" />
-        <title>Dana Dev</title>
+        <title>Dana Bestun — Full-stack Software Engineer</title>
       </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <StarsCanvas />
-        <Navbar />
-        {children}
-        <Footer />
+        <SmoothScroll>
+          <StarsCanvas />
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

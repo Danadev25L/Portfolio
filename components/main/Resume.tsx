@@ -55,7 +55,7 @@ const Resume = () => {
               </div>
               
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Dana Dev - Full Stack Developer
+                Dana Bestun — Full-stack developer
               </h2>
               
               <p className="text-gray-300 mb-6 max-w-lg mx-auto">
@@ -80,7 +80,7 @@ const Resume = () => {
                 onClick={handleDownload}
                 className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-full font-semibold shadow-lg hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105"
               >
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                <Download className="mr-2 h-5 w-5 group-hover:opacity-80 transition-opacity" />
                 Download CV
               </button>
               
@@ -90,11 +90,6 @@ const Resume = () => {
             </div>
           </div>
           
-          {/* Decorative elements */}
-          <div className="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full opacity-60"></div>
-          <div className="absolute bottom-4 left-4 w-3 h-3 bg-cyan-500 rounded-full opacity-60"></div>
-          <div className="absolute top-1/2 left-4 w-1 h-1 bg-purple-400 rounded-full opacity-40"></div>
-          <div className="absolute top-1/3 right-8 w-1 h-1 bg-cyan-400 rounded-full opacity-40"></div>
         </motion.div>
       </motion.div>
     </div>

@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </Link>
           
-          <Link href="mailto:Danamadridi7717@gmail.com" className="transform transition-transform hover:scale-110">
+          <Link href="/contact" className="transform transition-transform hover:scale-110">
             <div className="p-3 rounded-full bg-[#0300145e] hover:bg-[#7042f861] transition-colors duration-300">
               <FaEnvelope className="text-xl" />
             </div>
@@ -55,14 +55,18 @@ const Footer = () => {
           <Link href="#about-me" className="text-gray-300 hover:text-white transition-colors">About</Link>
           <Link href="#skills" className="text-gray-300 hover:text-white transition-colors">Skills</Link>
           <Link href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+          <Link href="#resume" className="text-gray-300 hover:text-white transition-colors">Resume</Link>
+          <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
         </div>
         
         {/* Copyright */}
         <div className="text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Dana Bestun. All rights reserved</p>
-          <p className="text-xs mt-2">
-            <span className="text-[#7042f8]">♥</span> Modern web developer
-          </p>
+          <p>&copy; {new Date().getFullYear()} Dana Bestun. All rights reserved.</p>
+          <p className="text-xs mt-2">Full-stack developer</p>
+          <div className="mt-3 flex flex-col sm:flex-row justify-center gap-4 text-xs">
+            <a href="mailto:contact@danabestun.dev" className="text-[#7042f8] hover:text-[#8d6afb] transition-colors">contact@danabestun.dev</a>
+            <a href="mailto:danadev25@gmail.com" className="text-[#7042f8] hover:text-[#8d6afb] transition-colors">danadev25@gmail.com</a>
+          </div>
         </div>
       </div>
     </footer>
