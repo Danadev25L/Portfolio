@@ -303,7 +303,7 @@ export const Skill_data = [
       },
       {
         skill_name: "Laravel",
-        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
         width: 70,
         height: 70,
         category: "Backend",
@@ -416,6 +416,20 @@ export const Skill_data = [
         height: 70,
         category: "DevOps",
       },
+      {
+        skill_name: "Jira",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-plain-wordmark.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Linear",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linear/linear-plain.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
     ],
     // Full Stack / Other Skills
     ...[
@@ -470,7 +484,7 @@ export const Skill_data = [
       },
       {
         skill_name: "AI Agents",
-        Image: "https://cdn.simpleicons.org/openai",
+        Image: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
         width: 70,
         height: 70,
         category: "Full Stack",

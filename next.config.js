@@ -38,6 +38,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'p16-assets-sg.tokopedia-static.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'laravel.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'asset.brandfetch.io',
+      },
     ],
     unoptimized: true,
   },

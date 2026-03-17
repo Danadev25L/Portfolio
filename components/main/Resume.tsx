@@ -1,18 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const Resume = () => {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/DanaBestunResume.pdf'; // Updated to match the new file name
-    link.download = 'DanaBestunResume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div
       className="relative z-10 flex flex-col items-center justify-center py-20"
@@ -65,7 +56,7 @@ const Resume = () => {
               
               {/* Skills Preview */}
               <div className="flex flex-wrap justify-center gap-2 mb-8">
-                {['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Git'].map((skill, index) => (
+                {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Rust', '.NET', 'Docker', 'Kubernetes', 'AWS', 'MongoDB', 'PostgreSQL', 'GraphQL', 'Redis', 'Tailwind CSS', 'Git', 'Jira', 'Linear'].map((skill, index) => (
                   <span
                     key={skill}
                     className="px-3 py-1 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 rounded-full text-sm text-purple-300"
@@ -74,18 +65,29 @@ const Resume = () => {
                   </span>
                 ))}
               </div>
+
+              {/* Work Experience Summary */}
+              <div className="mb-8 text-left max-w-2xl mx-auto">
+                <h3 className="text-lg font-semibold text-white mb-3 text-center">Work Experience</h3>
+                <div className="space-y-2 text-sm text-gray-300">
+                  <p><span className="text-purple-400">Gigant Tech</span> — Full Stack Developer Intern (Oct-Dec 2023)</p>
+                  <p><span className="text-purple-400">Techno Base</span> — Full Stack Developer (2025)</p>
+                  <p><span className="text-purple-400">Nano Tech Selmani</span> — Full Stack Developer (2025-Present)</p>
+                  <p><span className="text-purple-400">Emirates LS</span> — Full Stack Developer (2025-Present)</p>
+                </div>
+              </div>
               
-              {/* Download Button */}
-              <button
-                onClick={handleDownload}
+              {/* View Resume Button */}
+              <a
+                href="/resume"
                 className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-full font-semibold shadow-lg hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105"
               >
-                <Download className="mr-2 h-5 w-5 group-hover:opacity-80 transition-opacity" />
-                Download CV
-              </button>
-              
+                <ExternalLink className="mr-2 h-5 w-5 group-hover:opacity-80 transition-opacity" />
+                View Full Resume
+              </a>
+
               <p className="text-gray-400 text-sm mt-4">
-                PDF format • Updated regularly
+                Detailed resume with work history and skills
               </p>
             </div>
           </div>
