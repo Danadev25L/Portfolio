@@ -26,6 +26,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'seeklogo.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'p16-assets-sg.tokopedia-static.net',
+      },
     ],
     unoptimized: true,
   },

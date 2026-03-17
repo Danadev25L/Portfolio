@@ -32,24 +32,7 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "#",
       link: "https://zagamallerbil.com/"
     },
-    // 3. ZagaMall Dashboard
-    {
-      id: 9,
-      src: "/Screenshot 2025-08-05 144748.png",
-      title: "ZagaMall Dashboard",
-      description: "A comprehensive admin and analytics dashboard for ZagaMall, providing real-time insights into mall operations, store performance, event management, and visitor analytics. Built for the ZagaMall team to efficiently manage and monitor all aspects of the shopping center.",
-      githubLink: "#",
-      link: "https://zagamallerbil.com/"
-    },
-    // 4. DanaRent (Real Estate) - with video
-    {
-      id: 3,
-      src: "/landing.png",
-      title: "DanaRent",
-      description: "A comprehensive real estate platform connecting property managers with tenants. Features specialized dashboards for property management and tenant applications.",
-      githubLink: "https://github.com/Danadev25L/Real-State-",
-      link: "https://github.com/Danadev25L/Real-State-"
-    },
+    // 3. Furatpay
     {
       id: 1,
       src: "/furatpay.png",
@@ -58,6 +41,88 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "#",
       link: "https://furatpay.com/"
     },
+    // 4. Tokopedia
+    {
+      id: 16,
+      src: "https://p16-assets-sg.tokopedia-static.net/tos-alisg-i-cqp9s0kcd0-sg/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg",
+      title: "Tokopedia",
+      description: "Worked with Emirates LS as maintenance team on Tokopedia - a major e-commerce marketplace platform connecting buyers and sellers with secure payments, wide product range, and fast delivery across Indonesia.",
+      githubLink: "#",
+      link: "https://tokopedia.com"
+    },
+    // 5. Visit Kurdistan
+    {
+      id: 17,
+      src: "/visit-kurdistan.png",
+      title: "Visit Kurdistan",
+      description: "Worked with Techno Base as maintenance team on Visit Kurdistan - a tourism platform showcasing Kurdistan's beautiful destinations, culture, and heritage. Features travel guides, hotel bookings, tour packages, and local experiences.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 6. Pepu Management
+    {
+      id: 19,
+      src: "/lms-system.png",
+      title: "Pepu Management",
+      description: "Worked on maintenance for Pepu's social media platforms and mobile application. Managed content updates, user engagement, and ongoing app maintenance and support.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 7. POS System - DMA Company
+    {
+      id: 12,
+      src: "/pos-system.png",
+      title: "POS System",
+      description: "A Point of Sale system built for DMA Company, Aram Shops, and local markets including Sara Market, Ashti Market, and Azadi Market. Features product management, sales tracking, inventory control, and Kurdish language support.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 8. Cafe Care System - Brisa & Captain
+    {
+      id: 13,
+      src: "/pos-system-2.png",
+      title: "Cafe Care System",
+      description: "A comprehensive 3-in-1 system built for Brisa and Captain cafes. Includes Point of Sale, inventory management, and customer care - all in one unified platform.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 9. Sales Tracking System - DMA Company
+    {
+      id: 14,
+      src: "/pos-system-3.png",
+      title: "Sales Tracking System",
+      description: "A complete tracking and POS system for DMA Company with real-time sales monitoring, money calculation, inventory tracking, and financial reporting.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 10. HR Management System - Selmani Company
+    {
+      id: 15,
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      title: "HR Management System",
+      description: "A comprehensive HR management system built for Selmani Company. Features employee management, attendance tracking, payroll calculation, leave management, and performance reviews.",
+      githubLink: "#",
+      link: "#"
+    },
+    // 11. ZagaMall Dashboard
+    {
+      id: 9,
+      src: "/Screenshot 2025-08-05 144748.png",
+      title: "ZagaMall Dashboard",
+      description: "A comprehensive admin and analytics dashboard for ZagaMall, providing real-time insights into mall operations, store performance, event management, and visitor analytics. Built for the ZagaMall team to efficiently manage and monitor all aspects of the shopping center.",
+      githubLink: "#",
+      link: "https://zagamallerbil.com/"
+    },
+    // 12. DanaRent (Real Estate)
+    {
+      id: 3,
+      src: "/landing.png",
+      title: "DanaRent",
+      description: "A comprehensive real estate platform connecting property managers with tenants. Features specialized dashboards for property management and tenant applications.",
+      githubLink: "https://github.com/Danadev25L/Real-State-",
+      link: "https://github.com/Danadev25L/Real-State-"
+    },
+    // 13. IFitness
     {
       id: 2,
       src: "/ai.png",
@@ -66,6 +131,7 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "#",
       link: "https://ifitness-production.up.railway.app/"
     },
+    // 14. Online Course Platform
     {
       id: 4,
       src: "/Screenshot 2025-01-16 200235.png",
@@ -74,6 +140,7 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "https://github.com/Danadev25L/Learning-mangment",
       link: "#"
     },
+    // 15. FoodOrder App
     {
       id: 7,
       src: "/foodorder.png",
@@ -82,6 +149,7 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "#",
       link: "#"
     },
+    // 16. Space Website
     {
       id: 8,
       src: "/SpaceWebsite.png",
@@ -90,6 +158,7 @@ const PROJECTS_DATA: Project[] = [
       githubLink: "#",
       link: "#"
     },
+    // 17. E-commerce Website
     {
       id: 11,
       src: "/Screenshot 2025-08-05 145332.png",
@@ -120,7 +189,7 @@ const Projects = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-purple-600/20 to-cyan-600/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-gradient-to-tl from-blue-600/10 to-purple-600/10 rounded-full blur-2xl" />
       </div>
-      
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -130,11 +199,11 @@ const Projects = () => {
         <h1 className="text-[40px] md:text-[50px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-center mb-8">
           Selected work
         </h1>
-        
+
         <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16">
           Explore my latest work featuring modern web applications built with React, Next.js, and TypeScript.
         </p>
-        
+
         {/* Grid layout for projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-full">
           {displayedProjects.map((project, index) => (

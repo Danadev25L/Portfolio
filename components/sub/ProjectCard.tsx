@@ -48,12 +48,13 @@ const ProjectCard = ({ src, title, description, link, githubLink }: Props) => {
         className="group relative h-full overflow-hidden rounded-xl shadow-lg border border-[#2A0E61] bg-[#0C0C24] transition-all duration-300 hover:border-purple-500/50 hover:shadow-purple-500/20 cursor-pointer"
         onClick={handleCardClick}
       >
-        <div className="relative h-60 w-full">
+        <div className="relative h-60 w-full bg-[#0C0C24] flex items-center justify-center p-4">
           <Image
             src={src}
             alt={title}
-            fill
-            className="object-cover"
+            width={400}
+            height={240}
+            className="object-contain max-h-full max-w-full"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {title === "School Management System" && (
