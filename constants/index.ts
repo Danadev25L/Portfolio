@@ -425,7 +425,7 @@ export const Skill_data = [
       },
       {
         skill_name: "Linear",
-        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linear/linear-plain.svg",
+        Image: "https://asset.brandfetch.io/iduDYrzLTH/ido5HY7pYS.png",
         width: 70,
         height: 70,
         category: "DevOps",
