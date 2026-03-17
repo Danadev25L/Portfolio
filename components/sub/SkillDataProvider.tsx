@@ -10,9 +10,10 @@ interface Props {
   width: number;
   height: number;
   index: number;
+  name: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2
@@ -46,18 +47,19 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
       variants={containerVariants}
       animate={inView ? "visible" : "hidden"}
       whileHover={hoverAnimation}
-      className="relative p-4 bg-[#0A0A0A]/40 backdrop-blur-sm rounded-xl border border-[#2A2A2A] flex items-center justify-center group"
+      className="relative p-4 bg-white/20 backdrop-blur-sm rounded-xl border border-white/30 flex items-center justify-center group"
     >
       {/* Skill icon with subtle glow effect */}
       <div className="relative">
         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-purple-500/20 to-cyan-500/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <div className="relative">
+        <div className="relative flex items-center justify-center">
           <Image
             src={src}
             width={width}
             height={height}
-            alt='Skill icon'
-            className="object-contain w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[100px] md:h-[100px] drop-shadow-lg"
+            alt={name}
+            title={name}
+            className="object-contain drop-shadow-lg w-[85px] h-[85px] md:w-[100px] md:h-[100px]"
           />
         </div>
       </div>

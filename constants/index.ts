@@ -77,9 +77,9 @@ export const Skill_data = [
       width: 40,
       height: 40,
     },
-  
+
   ];
-  
+
   export const Socials = [
     {
       name: "Github",
@@ -97,8 +97,8 @@ export const Skill_data = [
       url: "https://www.facebook.com/profile.php?id=100080809302441"
     }
   ];
-  
-  
+
+
   export const AllSkills = [
     // Frontend Skills
     ...[
@@ -172,7 +172,27 @@ export const Skill_data = [
         height: 80,
         category: "Frontend",
       },
-     
+      {
+        skill_name: "Vue.js",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        width: 70,
+        height: 70,
+        category: "Frontend",
+      },
+      {
+        skill_name: "Angular",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+        width: 70,
+        height: 70,
+        category: "Frontend",
+      },
+      {
+        skill_name: "Svelte",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+        width: 70,
+        height: 70,
+        category: "Frontend",
+      },
     ],
     // Backend Skills
     ...[
@@ -189,11 +209,12 @@ export const Skill_data = [
         width: 80,
         height: 80,
         category: "Backend",
-      },   {
-        skill_name: "Php",
-        Image: "/Bun.png", // Replace with the correct image path
-        width: 85,
-        height: 80,
+      },
+      {
+        skill_name: "PHP",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+        width: 70,
+        height: 70,
         category: "Backend",
       },
       {
@@ -224,28 +245,251 @@ export const Skill_data = [
         height: 70,
         category: "Backend",
       },
-   
+      {
+        skill_name: "Rust",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: ".NET",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "NestJS",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Go",
+        Image: "/go.png",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Python",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Django",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "FastAPI",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Java",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Laravel",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Firebase",
+        Image: "/Firebase.png",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
+      {
+        skill_name: "Supabase",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+        width: 70,
+        height: 70,
+        category: "Backend",
+      },
     ],
-    // Full Stack Skills
+    // DevOps Skills
     ...[
-     
       {
         skill_name: "Docker",
-        Image: "/doker.png",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Kubernetes",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "GitHub Actions",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Jenkins",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-line.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "AWS",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Azure",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-plain.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Google Cloud",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Vercel",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Heroku",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Railway",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/railway/railway-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "DigitalOcean",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Terraform",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+      {
+        skill_name: "Ansible",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+        width: 70,
+        height: 70,
+        category: "DevOps",
+      },
+    ],
+    // Full Stack / Other Skills
+    ...[
+      {
+        skill_name: "WordPress",
+        Image: "/Wordpress.png",
+        width: 80,
+        height: 80,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "GraphQL",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
         width: 70,
         height: 70,
         category: "Full Stack",
       },
       {
-        skill_name: "WordPress",
-        Image: "/Wordpress.png", // Replace with the correct image path
-        width: 80,
-        height: 80,
+        skill_name: "Socket.io",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "Redis",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "Git",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "Linux",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "Figma",
+        Image: "/figma.png",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "AI Agents",
+        Image: "https://cdn.simpleicons.org/openai",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "TensorFlow",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+        width: 70,
+        height: 70,
+        category: "Full Stack",
+      },
+      {
+        skill_name: "PyTorch",
+        Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+        width: 70,
+        height: 70,
         category: "Full Stack",
       },
     ],
   ].map((skill, index) => ({ ...skill, id: index + 1 }));
-  
-  
-  
-  
+
+

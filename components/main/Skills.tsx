@@ -28,6 +28,7 @@ const Skills: React.FC = () => {
                   width={skill.width}
                   height={skill.height}
                   index={skill.id}
+                  name={skill.skill_name}
                 />
               )
             )}

@@ -9,9 +9,14 @@ import * as random from "maath/random/dist/maath-random.esm";
 const StarBackground = (props: any) => {
   const ref: any = useRef();
   const [sphere] = useState(() => {
+    // Generate points in sphere and replace NaN values with valid coordinates
     const points = random.inSphere(new Float32Array(5000), { radius: 1.2 });
-    // Filter out any NaN values
-    return Float32Array.from(points).filter((v) => !isNaN(v));
+    for (let i = 0; i < points.length; i++) {
+      if (isNaN(points[i]) || !isFinite(points[i])) {
+        points[i] = (Math.random() - 0.5) * 2;
+      }
+    }
+    return points;
   });
 
   useFrame((state, delta) => {
@@ -42,7 +47,7 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[-1]">  
+    <div className="w-full h-auto fixed inset-0 z-[-1]">
         <Canvas camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
             <StarBackground />
