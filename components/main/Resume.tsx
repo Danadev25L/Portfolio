@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 
 const Resume = () => {
   return (
@@ -77,17 +76,20 @@ const Resume = () => {
                 </div>
               </div>
               
-              {/* View Resume Button */}
+              {/* Download Resume Button */}
               <a
-                href="/resume"
+                href="/DanaBestunResume.pdf"
+                download
                 className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-full font-semibold shadow-lg hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105"
               >
-                <ExternalLink className="mr-2 h-5 w-5 group-hover:opacity-80 transition-opacity" />
-                View Full Resume
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Resume
               </a>
 
               <p className="text-gray-400 text-sm mt-4">
-                Detailed resume with work history and skills
+                PDF resume with work history and skills
               </p>
             </div>
           </div>
