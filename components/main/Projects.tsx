@@ -12,12 +12,8 @@ interface Project {
   link: string;
 }
 
-const Projects = () => {
-  const [displayedProjects, setDisplayedProjects] = useState<Project[]>([]);
-  const [isHomePage, setIsHomePage] = useState(false);
-
-  // Project data with updated GitHub and preview links
-  const projects: Project[] = [
+// Project data with updated GitHub and preview links
+const PROJECTS_DATA: Project[] = [
     // 1. Nishtman Strategy Institute
     {
       id: 10,
@@ -104,10 +100,14 @@ const Projects = () => {
     },
   ];
 
+const Projects = () => {
+  const [displayedProjects, setDisplayedProjects] = useState<Project[]>([]);
+  const [isHomePage, setIsHomePage] = useState(false);
+
   useEffect(() => {
     const isHome = window.location.pathname === '/';
     setIsHomePage(isHome);
-    setDisplayedProjects(isHome ? projects.slice(0, 6) : projects);
+    setDisplayedProjects(isHome ? PROJECTS_DATA.slice(0, 6) : PROJECTS_DATA);
   }, []);
 
   return (
