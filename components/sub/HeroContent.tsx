@@ -7,7 +7,6 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,15 +21,14 @@ const HeroContent = () => {
     >
       {/* Left Section */}
       <div className="flex flex-col gap-5 justify-center text-center lg:text-start w-full lg:w-1/2 px-4 md:px-8">
-        {/* Welcome Box */}
+        {/* Badge */}
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-3 px-6 sm:px-8 border border-[#7042f88b] opacity-[0.9] flex items-center justify-center lg:justify-start rounded-lg mx-auto lg:mx-0 max-w-full sm:max-w-md lg:max-w-full"
+          className="hero-badge py-3 px-6 sm:px-8 flex items-center justify-center lg:justify-start rounded-lg mx-auto lg:mx-0 max-w-full sm:max-w-md lg:max-w-full"
         >
-          <SparklesIcon className="text-[#b49bff] h-6 w-6 mr-3" />
-          <h1 className="Welcome-text text-xl sm:text-2xl font-medium">
-            Fullstack Developer Portfolio
-          </h1>
+          <span className="text-[#b49bff] text-xl sm:text-2xl font-medium">
+            Full-stack software engineer
+          </span>
         </motion.div>
 
         {/* Hero Heading */}
