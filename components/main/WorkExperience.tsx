@@ -105,7 +105,6 @@ const WorkExperience = () => {
                 company={exp.company}
                 period={exp.period}
                 description={exp.description}
-                logo={exp.logo}
                 gradient={exp.gradient}
               />
             </motion.div>
