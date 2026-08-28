@@ -14,7 +14,7 @@ const Navbar = () => {
     // Only handle scroll-based navigation on the home page
     if (pathname === '/') {
       const handleScroll = () => {
-        const sections = ["about-me", "skills", "projects", "resume"];
+        const sections = ["about-me", "skills", "projects"];
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
@@ -84,12 +84,6 @@ const Navbar = () => {
                 className={`cursor-pointer ${activeSection === "projects" ? "text-[#7042f8] font-medium" : ""}`}
               >
                 Projects
-              </button>
-              <button
-                onClick={() => handleNavigation("resume")}
-                className={`cursor-pointer ${activeSection === "resume" ? "text-[#7042f8] font-medium" : ""}`}
-              >
-                Resume
               </button>
               <Link
                 href="/contact"
@@ -167,22 +161,6 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
           </svg>
           <span className="text-xs mt-1 font-medium">Projects</span>
-        </button>
-        <button
-          onClick={() => handleNavigation("resume")}
-          className={`flex flex-col items-center relative px-4 py-2 transition-all duration-300 ${
-            activeSection === "resume"
-              ? "text-white"
-              : "text-gray-300 hover:text-gray-100"
-          }`}
-        >
-          {activeSection === "resume" && (
-            <span className="absolute inset-0 bg-gradient-to-r from-[#7042f8] to-[#8d6afb] rounded-xl -z-10 opacity-90"></span>
-          )}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-          <span className="text-xs mt-1 font-medium">Resume</span>
         </button>
         <Link
           href="/contact"

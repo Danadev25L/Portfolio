@@ -1,6 +1,5 @@
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
-import Resume from "@/components/main/Resume";
 import Skills from "@/components/main/Skills";
 import WorkExperience from "@/components/main/WorkExperience";
 
@@ -12,7 +11,6 @@ export default function Home() {
         <WorkExperience />
         <Skills />
         <Projects />
-        <Resume />
       </div>
     </main>
   );

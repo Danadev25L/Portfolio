@@ -20,9 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Ensure the favicon path is correct */}
         <link rel="icon" type="image/png" href="/WebchainLogo.svg" />
-        <title>Dana Bestun — Full-stack Software Engineer</title>
       </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}

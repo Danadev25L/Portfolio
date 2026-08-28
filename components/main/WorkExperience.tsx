@@ -40,6 +40,13 @@ const WorkExperience = () => {
   const experiences = [
     {
       title: "Full Stack Developer",
+      company: "Zuu",
+      period: "Jul 2026 - Oct 2026",
+      description: "Worked across Zuu's customer, Business, and Courier applications, supporting ordering, restaurant operations, and delivery workflows.",
+      gradient: "from-lime-400 to-purple-500",
+    },
+    {
+      title: "Full Stack Developer",
       company: "Gigant Tech",
       period: "Oct 2023 - Dec 2023",
       description: "Worked as full stack developer intern. Built production-ready web applications and gained hands-on experience with modern technologies.",

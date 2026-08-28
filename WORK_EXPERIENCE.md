@@ -2,6 +2,17 @@
 
 ## Work Experience
 
+### Zuu
+**Role:** Full Stack Developer
+**Period:** Jul 2026 - Oct 2026
+**Location:** Erbil, Iraq
+
+- Worked across the Zuu customer, Business, and Courier applications
+- Supported customer ordering, restaurant operations, and courier delivery workflows
+- Website: [zuuapp.com](https://zuuapp.com)
+
+---
+
 ### Emirates LS
 **Role:** Full Stack Developer
 **Period:** 2025 - Present

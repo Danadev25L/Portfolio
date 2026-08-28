@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Livîn logo</title>
+  <g transform="rotate(8 20 20)">
+    <rect x="4" y="12" width="15" height="22" rx="7" stroke="#F7CBB2" stroke-width="3.5" />
+    <rect x="11" y="9" width="15" height="22" rx="7" stroke="#F29A6B" stroke-width="3.5" />
+    <rect x="18.5" y="6" width="16" height="23" rx="7" stroke="#F04A15" stroke-width="4" />
+  </g>
+</svg>
