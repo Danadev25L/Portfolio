@@ -8,7 +8,7 @@ import { ORDERED_PROJECTS } from "@/data/projects";
 const Projects = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
-  const displayedProjects = isHomePage ? ORDERED_PROJECTS.slice(0, 7) : ORDERED_PROJECTS;
+  const displayedProjects = isHomePage ? ORDERED_PROJECTS.slice(0, 8) : ORDERED_PROJECTS;
 
   return (
     <section
