@@ -37,14 +37,16 @@ const ProjectCard = ({ project }: Props) => {
             ))}
           </div>
         ) : (
-          <Image
-            src={project.src}
-            alt={project.title}
-            width={520}
-            height={300}
-            className="max-h-full max-w-full object-contain transition duration-500 group-hover:scale-[1.03]"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
+          <div className={project.imageSurface === "light" ? "relative flex h-full w-full items-center justify-center rounded-2xl bg-white p-7" : "contents"}>
+            <Image
+              src={project.src}
+              alt={project.title}
+              width={520}
+              height={300}
+              className="max-h-full max-w-full object-contain transition duration-500 group-hover:scale-[1.03]"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
         )}
       </Link>
 

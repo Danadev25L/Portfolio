@@ -87,7 +87,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 ))}
               </div>
             ) : (
-              <Image src={project.src} alt={project.title} width={760} height={500} priority className="relative max-h-[430px] w-auto max-w-full object-contain" />
+              <div className={project.imageSurface === "light" ? "relative flex min-h-[260px] w-full items-center justify-center rounded-3xl bg-white p-8 sm:p-12" : "contents"}>
+                <Image src={project.src} alt={project.title} width={760} height={500} priority className="relative max-h-[430px] w-auto max-w-full object-contain" />
+              </div>
             )}
           </div>
         </section>

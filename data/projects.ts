@@ -7,6 +7,7 @@ export type Project = {
   id: number;
   slug: string;
   src: string;
+  imageSurface?: "light";
   images?: ProjectImage[];
   title: string;
   eyebrow: string;
@@ -74,7 +75,8 @@ export const PROJECTS: Project[] = [
   {
     id: 23,
     slug: "shoplink",
-    src: "/shoplink.png",
+    src: "/shoplink-logo.svg",
+    imageSurface: "light",
     title: "ShopLink",
     eyebrow: "Multi-tenant e-commerce SaaS",
     description: "A production Techno Base platform that lets local businesses launch, manage, and grow complete online stores from one subscription.",
