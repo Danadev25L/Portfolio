@@ -25,6 +25,23 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: 24,
+    slug: "hotel-os",
+    src: "/erbil-holiday-logo.svg",
+    imageSurface: "light",
+    title: "Hotel OS",
+    eyebrow: "Hotel management system & website",
+    description: "A complete operating system for Erbil Holiday Hotel: front desk, housekeeping, point of sale, finance, HR and payroll, procurement, documents and reports, plus the hotel's public website.",
+    overview: "Hotel OS runs the whole hotel from one system. The front desk takes walk-ins and bookings, housekeeping works from a live cleaning queue, the café and shop sell through a point of sale, cashiers close registers in Iraqi dinar and US dollars, and the owner reads daily, monthly and staff reports in Kurdish, Arabic and English. The same platform publishes the hotel's public website at erbilholiday.com with an in-app website builder and booking requests.",
+    role: "Full-stack engineering & production ownership",
+    engagement: "Staff apps · Phone app · Website · API",
+    year: "Production · 2026",
+    externalLink: "https://erbilholiday.com",
+    capabilities: ["Front desk & reservations", "Stay view & room board", "Housekeeping queue", "Point of sale", "Cashbook & registers (IQD / USD)", "Finance & accounting", "HR, attendance & payroll", "Procurement & stock", "Documents", "Reports in Kurdish, Arabic & English", "Installable phone app with push notifications", "AI assistant", "Website builder & booking requests"],
+    contributions: ["Built the NestJS API and Next.js apps on PostgreSQL with per-hotel row-level security and role-based access", "Designed maker/checker approvals, immutable audit history and cashier shift controls", "Shipped the installable staff phone app with Web Push notifications", "Added the AI assistant that answers staff questions in any wording", "Built the website builder that publishes the hotel's public site and takes booking requests", "Run production on Heroku with nightly off-site backups and a security audit"],
+    outcomes: ["One system for every department instead of paper and spreadsheets", "Owner sees cash, occupancy and staff performance the same day", "A public website the hotel edits itself"],
+  },
+  {
     id: 19,
     slug: "pepu-management",
     src: "/lms-system.png",
@@ -300,7 +317,7 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const HOME_PROJECT_IDS = [19, 16, 17, 23, 20, 21, 22];
+export const HOME_PROJECT_IDS = [24, 19, 16, 17, 23, 20, 21, 22];
 
 export const ORDERED_PROJECTS = [
   ...HOME_PROJECT_IDS.map((id) => PROJECTS.find((project) => project.id === id)).filter(

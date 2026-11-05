@@ -21,7 +21,7 @@ const ExperienceCard = ({
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative p-6 bg-[#0C0C24]/80 backdrop-blur-sm rounded-xl border border-[#2A0E61] hover:border-purple-500/50 transition-all duration-300 group"
+      className="relative p-6 bg-[#0C0C24]/90 rounded-xl border border-[#2A0E61] hover:border-purple-500/50 transition-colors duration-300 group"
     >
       <div className={`absolute -inset-0.5 bg-gradient-to-r ${gradient} rounded-xl blur-sm opacity-20 group-hover:opacity-40 transition-opacity duration-300`} />
       <div className="relative z-10">

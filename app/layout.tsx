@@ -4,7 +4,6 @@ import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
-import SmoothScroll from "@/components/main/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,12 +24,10 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <SmoothScroll>
-          <StarsCanvas />
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScroll>
+        <StarsCanvas />
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

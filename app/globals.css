@@ -39,6 +39,13 @@
 
 
 
+/* Native scrolling (the Lenis scroll library and its per-frame loop were removed: they made scrolling lag). */
 html {
-  /* Lenis handles smooth scrolling */
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

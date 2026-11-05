@@ -51,7 +51,7 @@ const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
       variants={containerVariants}
       animate={inView ? "visible" : "hidden"}
       whileHover={hoverAnimation}
-      className="relative p-3 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center group min-w-[100px] min-h-[100px]"
+      className="relative p-3 bg-white/10 rounded-xl border border-white/20 flex items-center justify-center group min-w-[100px] min-h-[100px]"
     >
       {/* Skill icon with subtle glow effect */}
       <div className="relative">
@@ -91,19 +91,8 @@ const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
         <span className="text-white text-xs bg-black/50 px-2 py-1 rounded whitespace-nowrap">{name}</span>
       </div>
 
-      {/* Subtle animated pulse dot */}
-      <motion.div
-        className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.7, 1, 0.7]
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          repeatType: "loop"
-        }}
-      />
+      {/* Subtle pulse dot: a CSS animation, so forty of them cost the main thread nothing while scrolling */}
+      <div className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 animate-pulse" />
     </motion.div>
   )
 }

@@ -11,25 +11,27 @@ const Navbar = () => {
   const pathname = usePathname();
   
   useEffect(() => {
-    // Only handle scroll-based navigation on the home page
-    if (pathname === '/') {
-      const handleScroll = () => {
-        const sections = ["about-me", "skills", "projects"];
-        for (const section of sections) {
-          const element = document.getElementById(section);
-          if (element) {
-            const rect = element.getBoundingClientRect();
-            if (rect.top <= 100 && rect.bottom >= 100) {
-              setActiveSection(section);
-              break;
-            }
+    // Only handle scroll-based navigation on the home page. An IntersectionObserver tells us when a section
+    // crosses the 100px line under the navbar; the old scroll listener measured three elements and re-rendered
+    // the navbar on every scroll event, which made scrolling stutter.
+    if (pathname !== '/') return;
+    const sections = ["about-me", "skills", "projects"]
+      .map((id) => document.getElementById(id))
+      .filter((element): element is HTMLElement => element !== null);
+    if (sections.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection((current) => (current === entry.target.id ? current : entry.target.id));
           }
         }
-      };
-      
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
+      },
+      // A 1px-tall band 100px below the top of the viewport: the section under the navbar is the active one.
+      { rootMargin: "-100px 0px -99% 0px", threshold: 0 },
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, [pathname]);
   
   const handleNavigation = (section: string) => {
